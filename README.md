@@ -21,32 +21,32 @@ The script can be run in two ways:
     mentioned below.
 
     ```bash
-    ./run.sh <project_key> <project_name> <main_branch> <analysis_token> <directory>
+    ./SonarDockerCodeQuality.sh <project_key> <project_name> <main_branch> <analysis_token> <directory>
     ```
 
     or
 
     ```bash
-    ./run.sh --project <project_key> --name <project_name> --main-branch <main_branch> --analyze <analysis_token> --directory <directory>
+    ./SonarDockerCodeQuality.sh --project <project_key> --name <project_name> --main-branch <main_branch> --analyze <analysis_token> --directory <directory>
     ```
 
     or
 
     ```bash
-    ./run.sh -p <project_key> -n <project_name> -m <main_branch> -a <analysis_token> -d <directory>
+    ./SonarDockerCodeQuality.sh -p <project_key> -n <project_name> -m <main_branch> -a <analysis_token> -d <directory>
     ```
 
 2.  Variable-less mode: This mode is used to run a new SonarQube analysis on the project. You don't need to provide any
     variables. Only the SonarQube scanner will be executed.
 
     ```bash
-    ./run.sh --name <project_name> --directory <directory>
+    ./SonarDockerCodeQuality.sh --name <project_name> --directory <directory>
     ```
 
     or
 
     ```bash
-    ./run.sh -n <project_name> -d <directory>
+    ./SonarDockerCodeQuality.sh -n <project_name> -d <directory>
     ```
 
 ## Variables
@@ -62,13 +62,13 @@ The script can be run in two ways:
 Example with full variable identifier:
 
 ```bash
-./run.sh --project caramelo --name pepe --main-branch master --analyze true --directory user
+./SonarDockerCodeQuality.sh --project caramelo --name pepe --main-branch master --analyze true --directory user
 ```
 
 Example with shortcuts in the variable identifier:
 
 ```bash
-./run.sh -p caramelo -n pepe -m master -a true -d usersA
+./SonarDockerCodeQuality.sh -p caramelo -n pepe -m master -a true -d usersA
 ```
 
 ## Helper
@@ -76,13 +76,13 @@ Example with shortcuts in the variable identifier:
 For more information on how to use the script, you can use the help option:
 
 ```bash
-./run.sh --help
+./SonarDockerCodeQuality.sh --help
 ```
 
 or
 
 ```bash
-./run.sh -h
+./SonarDockerCodeQuality.sh -h
 ```
 
 ## Note
